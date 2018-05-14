@@ -1,11 +1,11 @@
-
 package piolab1;
 
-public class PlayerDumb extends Player{
-    
+public class PlayerDumb extends Player {
+
     @Override
-    public int guess(){
-        return 6;   
+    public int guess() {
+        System.out.println("6");
+        return 6;
     }
-    
+
 }

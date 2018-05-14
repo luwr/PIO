@@ -1,8 +1,8 @@
-
 package piolab1;
 
-abstract public class Player {
-    
+public abstract class Player {
+
     abstract int guess();
-    
-}
+
+    }
+

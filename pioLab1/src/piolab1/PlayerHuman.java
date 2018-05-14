@@ -1,16 +1,24 @@
-
 package piolab1;
 
 import java.util.Scanner;
 
 public class PlayerHuman extends Player {
+
+    Scanner reader = new Scanner(System.in);   
+    private final String name;
+
     
-    Scanner reader = new Scanner(System.in);  
-    private int liczbaWymyslona = 0;
     
+    PlayerHuman(String name) {
+        this.name = name;
+    }
+
     public int guess() {
-        System.out.print("Podaj liczbę: ");
-        System.out.println("");
-        return liczbaWymyslona = reader.nextInt();    
+        return reader.nextInt();
+    }
+    
+    @Override
+    public String toString(){
+        return name;
     }
 }
